@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Kaтeнькa Ф](https://up.htmlacademy.ru/htmlcss/28/user/1487273).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев] (https://htmlacademy.ru/profile/id24186)
 
 ---
 
