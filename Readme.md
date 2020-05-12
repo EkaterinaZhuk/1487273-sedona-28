@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Екатерина Жучкова](https://up.htmlacademy.ru/htmlcss/28/user/1487273).
+* Студент: [Екатерина Жук](https://up.htmlacademy.ru/htmlcss/28/user/1487273).
 * Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186)
 
 ---
