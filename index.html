@@ -2,50 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header>
       <nav>
-        <img
-          src="img/Group.png"
-          width="138"
-          height="70"
-          left="571"
-          top="0"
-          alt="Логотип проекта Sedona"
-        />
         <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotel.html">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
+      <img src="img/Group.png" width="138" height="70" alt="логотип" />
     </header>
     <main>
-      <img
-        src="img/Group 3.jpg"
-        width="1200"
-        height="509"
-        left="40"
-        top="0"
-        alt="ФОН"
-      />
-      <img
-        src="img/welcome.svg"
-        width="457"
-        height="351"
-        left="411"
-        top="132"
-        alt="Welcome Sedona"
-      />
-      <h1>Проект "Седона"</h1>
-      <section>
-        <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-      </section>
-      <section>
-        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН</p>
+      <img src="img/welcome.svg" width="457" height="351" alt="welcome" />
+      <h1 hidden>Проект "Седона"</h1>
+      <div>
+        <h2>
+          Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
+        </h2>
+        <p>
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </div>
+      <div>
         <ol>
           <li>Причина №1</li>
           <li>Причина №2</li>
@@ -53,34 +36,56 @@
           <li>Причина №4</li>
           <li>Причина №5</li>
         </ol>
-      </section>
-      <div>
+      </div>
+      <section>
         <h2>
-          ЗАИНТЕРЕСОВАЛИСЬ?
+          Заинтересовались?
         </h2>
         <p>
           Укажите предполагаемые даты поездки,<br />
           и мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
-        <h3>Поиск гостиницы в Седоне</h3>
-        <img
-          src="img/calendar.svg"
-          width="21"
-          height="23"
-          left="839"
-          top="2231"
-          alt="calendar"
-        />
-        <img
-          src="img/calendar.svg"
-          width="21"
-          height="23"
-          left="839"
-          top="2298"
-          alt="calendar"
-        />
-        <button type="button">Найти</button>
-      </div>
+        <button type="button" id="search" class="btn-search">
+          Поиск гостиницы в Седоне
+        </button>
+        <div>
+          <form action="#" method="post">
+            <p>
+              <label for="arrival-date">Дата заезда:</label>
+              <input
+                type="text"
+                name="arrival-date"
+                id="arrival-date"
+                placeholder="24 апреля 2017"
+                required
+              />
+            </p>
+            <p>
+              <label for="departure-date">Дата выезда:</label>
+              <input
+                type="text"
+                name="departure-date"
+                id="departure-date"
+                placeholder="4 июля 2017"
+                required
+              />
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <button type="button">-</button>
+              <input type="text" name="adults" id="adults" value="2" />
+              <button type="button">+</button>
+            </p>
+            <p>
+              <label for="children">Дети:</label>
+              <button type="button">-</button>
+              <input type="text" name="children" id="children" value="0" />
+              <button type="button">+</button>
+            </p>
+            <input type="submit" value="Найти" />
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <div>
@@ -89,36 +94,9 @@
       </div>
       <div>
         <ul>
-          <li>
-            <img
-              src="img/twitter.svg"
-              width="17"
-              height="15"
-              left="0"
-              top="0"
-              alt="twitter"
-            />
-          </li>
-          <li>
-            <img
-              src="img/fb-icon.svg"
-              width="12"
-              height="22"
-              left="0"
-              top="0"
-              alt="fb"
-            />
-          </li>
-          <li>
-            <img
-              src="img/youtube.svg"
-              width="20"
-              height="16"
-              left="0"
-              top="0"
-              alt="youtube"
-            />
-          </li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">FB</a></li>
+          <li><a href="#">Youtube</a></li>
         </ul>
       </div>
       <div>
@@ -126,9 +104,7 @@
         <img
           src="img/logo-htmlacademy.svg"
           left="82"
-          right="8.42"
-          top="31.67"
-          bottom="34.17"
+          right="8"
           alt="logo-htmlacademy"
         />
       </div>
