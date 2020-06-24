@@ -1,9 +1,344 @@
-Папка для стилевых файлов.
+/* Variables */
 
---
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-dark: #a9a9a9;
+  --basic-neutral: #e5e5e5;
+  --basic-extra-light: #f8f5f2;
+  --basic-white: #ffffff;
 
-Пример структуры файлов:
+  --special: #81b3d2;
+  --special1: #beb7b7;
+}
+/* Global */
 
-css/
-| - style.css
-| - [другие *.css файлы]
+.page1-body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("../img/background_index.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.page2-body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.shadows {
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+/* main navigation */
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+.site-navigation a {
+  color: var(--basic-black);
+  font-family: "PT Sans", sans-serif;
+}
+
+.main-navigation li.active a {
+  color: #766357;
+}
+.main-navigation li a:hover {
+  color: #81b3d2;
+}
+.main-navigation li a:active {
+  color: #cacaca;
+}
+/* main */
+.logo-position {
+  text-align: center;
+}
+.about-city {
+  text-align: center;
+  background-color: var(--basic-white);
+}
+.about-city p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.cause-one {
+  display: flex;
+  height: 256px;
+  background-color: #81b3d2;
+  color: var(--basic-white);
+  text-align: center;
+  margin: 0;
+}
+.cause-background {
+  text-align: center;
+  width: 400px;
+  height: 256px;
+}
+.cause-number,
+.cause-background p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.clearfix {
+  display: flex;
+  margin: 0;
+  background-color: var(--basic-white);
+}
+.cause-home {
+  text-align: center;
+  width: 400px;
+}
+.cause-home p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.cause-two {
+  display: flex;
+  margin: 0;
+  height: 256px;
+  background-color: #81b3d2;
+  color: var(--basic-white);
+  text-align: center;
+}
+.cause-additionally {
+  background-color: #eeeeee;
+}
+.search {
+  text-align: center;
+}
+.search h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+.search p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.btn-search {
+  background-color: #766357;
+  border: none;
+  color: var(--basic-white);
+  line-height: 26px;
+  font-size: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  width: 568px;
+  height: 86px;
+}
+.search-modal {
+  background-color: var(--basic-white);
+}
+.serch-form input {
+  background-color: #f2f2f2;
+  line-height: 26px;
+  border: none;
+}
+.fields input,
+.adult input,
+.child input {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.btn-minus {
+  border: none;
+  color: #a9a9a9;
+}
+.btn-plus {
+  border: none;
+  color: #a9a9a9;
+}
+.search-finish {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+}
+.serch-form input[type="submit"] {
+  background-color: #669ec0;
+  color: var(--basic-white);
+  border: none;
+  line-height: 26px;
+  font-size: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  width: 458px;
+  height: 58px;
+}
+/* footer */
+.footer {
+  display: flex;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+.footer-hashtag a,
+p {
+  color: var(--basic-black);
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+}
+.social-btn {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+.results .read-more:hover,
+.social-btn:hover {
+  background-color: #669ec0;
+}
+.social-btn:active::before {
+  opacity: 0.3;
+}
+.copyright {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.filters {
+  color: var(--basic-white);
+  background-image: url("../img/background_inner.jpg");
+  background-color: #81b3d2;
+}
+.sorting {
+  background-color: var(--basic-white);
+}
+.sorting-result {
+  font-size: 21px;
+  line-height: 26px;
+}
+.sorting-filters {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+}
+.sorting-type,
+.sorting-rated {
+  border-bottom: 1px dashed #81b3d2;
+  color: var(--basic-dark);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting-up {
+  width: 10px;
+  height: 11px;
+  color: #cacaca;
+}
+.line {
+  width: 1200px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.hotel {
+  background-color: var(--basic-white);
+}
+.hotel li {
+  list-style: none;
+}
+.hotel-info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+.results-description-info span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.read-more {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 17px 3px 16px;
+}
+.results-description-book span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.book {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  color: var(--basic-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 16px 3px 17px;
+}
